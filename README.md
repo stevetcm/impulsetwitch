@@ -12,7 +12,7 @@ Features
 
 Google Play Link
 -------
-Twitch API deprecated
+Update - Twitch API deprecated
 
 Screenshots
 -------
