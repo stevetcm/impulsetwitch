@@ -10,9 +10,9 @@ Features
 - Crop-to-fit mode
 - Sleep Timer
 
-Google Play Link
+Status
 -------
-Update - Twitch API deprecated
+Discontinued - Twitch API deprecated
 
 Screenshots
 -------
