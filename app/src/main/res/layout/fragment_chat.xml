@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_chat_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/chatBackgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/scroll_to_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border_background"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="35dp"
+                android:text="Scroll to Last"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/chat_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey_500"/>
+
+        <LinearLayout
+            android:id="@+id/chat_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <EditText
+                android:id="@+id/send_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="Send a message in chat."
+                android:textColor="?attr/chatMessageTextColor"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/grey_500"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:imeOptions="actionSend"/>
+
+            <ImageView
+                android:id="@+id/emote_icon"
+                android:src="@drawable/ic_emote_grey_96dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="right|center"/>
+
+            <ImageView
+                android:id="@+id/send_icon"
+                android:src="@drawable/ic_send_grey_96dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/emote_keyboard_container"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_below="@id/chat_container"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/emote_keyboard_loading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey_500"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/emotes_keyboard_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#ff3f51b5</item>
+        <item name="colorPrimaryDark">#ff303f9f</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/grey_35</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="chatBackgroundColor">@color/white</item>
+        <item name="chatMessageTextColor">@color/black</item>
+        <item name="searchBackgroundColor">@color/white</item>
+        <item name="searchTextColor">@color/black</item>
+        <item name="spinnerBackgroundColor">@color/transparent</item>
+        <item name="main_tab_background">@color/indigo_main_tab_background</item>
+    </style>
+
+    <style name="IndigoTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">#ff3f51b5</item>
+        <item name="colorPrimaryDark">#ff303f9f</item>
+        <item name="colorAccent">@color/indigo_settings_title</item>
+        <item name="android:windowBackground">@drawable/indigo_gradient_background</item>
+        <item name="chatMessageTextColor">@color/black</item>
+        <item name="navBarItemColor">@color/white</item>
+        <item name="navBarBackground">@drawable/indigo_gradient_background</item>
+        <item name="customSideColor">@color/indigo_tab</item>
+    </style>
+
+    <style name="TwitchTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">#ff43085f</item>
+        <item name="colorPrimaryDark">#ff240840</item>
+        <item name="colorAccent">@color/twitch_settings_title</item>
+        <item name="android:windowBackground">@drawable/twitch_gradient_background</item>
+        <item name="navBarItemColor">@color/white</item>
+        <item name="navBarBackground">@drawable/twitch_gradient_background</item>
+        <item name="chatBackgroundColor">@color/purple_195</item>
+        <item name="chatMessageTextColor">@color/white</item>
+        <item name="customSideColor">@color/twitch_tab</item>
+        <item name="main_tab_background">@color/twitch_main_tab_background</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">#ff282828</item>
+        <item name="colorPrimaryDark">#ff232323</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@drawable/dark_gradient_background</item>
+        <item name="navBarItemColor">@color/white</item>
+        <item name="navBarBackground">@drawable/dark_gradient_background</item>
+        <item name="chatBackgroundColor">@color/grey_37</item>
+        <item name="chatMessageTextColor">@color/white</item>
+        <item name="customSideColor">@color/dark_tab</item>
+        <item name="main_tab_background">@color/dark_main_tab_background</item>
+    </style>
+
+    <style name="BlackTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="navBarItemColor">@color/white</item>
+        <item name="navBarBackground">@color/black</item>
+        <item name="chatBackgroundColor">@color/black</item>
+        <item name="chatMessageTextColor">@color/white</item>
+        <item name="customSideColor">@color/grey_A110</item>
+        <item name="main_tab_background">@color/black</item>
+    </style>
+
+    <style name="WhiteTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/grey_190</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="navBarItemColor">@color/black</item>
+        <item name="navBarBackground">@color/white</item>
+        <item name="android:listDivider">@color/grey_A110</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="searchBackgroundColor">@color/black</item>
+        <item name="searchTextColor">@color/white</item>
+        <item name="customSideColor">@color/grey_A110</item>
+        <item name="spinnerBackgroundColor">@color/black</item>
+        <item name="main_tab_background">@color/black</item>
+    </style>
+
+    <style name="stream_onscreen_items_layout">
+        <item name="android:layout_width">39dp</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:layout_marginRight">9dp</item>
+    </style>
+
+    <style name="stream_control_items_layout">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_marginLeft">-10dp</item>
+        <item name="android:layout_marginRight">-10dp</item>
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:layout_marginBottom">-2dp</item>
+    </style>
+
+    <style name="stream_settings_item">
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="dialog_box_style" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="toolbar_light_theme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="custom_slider_theme">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="custom_material_widget_spinner">
+        <item name="spn_labelEnable">false</item>
+        <item name="spn_labelPadding">0dp</item>
+        <item name="spn_labelTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="spn_labelTextColor">@color/abc_secondary_text_material_dark</item>
+        <item name="spn_labelEllipsize">end</item>
+        <item name="spn_dividerHeight">0dp</item>
+        <item name="spn_dividerPadding">0dp</item>
+        <item name="spn_dividerAnimDuration">@android:integer/config_shortAnimTime</item>
+        <item name="spn_arrowColor">?attr/searchTextColor</item>
+        <item name="spn_arrowSize">5dp</item>
+        <item name="spn_arrowPadding">10dp</item>
+        <item name="spn_popupItemAnimation">@null</item>
+        <item name="spn_popupItemAnimOffset">120</item>
+        <item name="android:popupBackground">?attr/searchBackgroundColor</item>
+    </style>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="19dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/livestream_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/livestream_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="@string/default_livestream_quality"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/livestream_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vod_text"
+        android:layout_below="@+id/livestream_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vod_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="@string/default_vod_quality"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/vod_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clips_text"
+        android:layout_below="@+id/vod_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/clips_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="@string/default_clips_quality"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/clips_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Player Settings"
+        android:key="category_player">
+
+        <Preference
+            android:title="Default Quality WiFi"
+            android:summary="Source"
+            android:key="wifi_quality_key"/>
+
+        <Preference
+            android:title="Default Quality Mobile"
+            android:summary="Source"
+            android:key="mobilie_quality_key"/>
+
+        <Preference
+            android:title="Quick Seek Button Time"
+            android:summary="5 Seconds"
+            android:key="quick_seek_key"/>
+
+        <Preference
+            android:title="Sleep Timer Settings"
+            android:summary="Configure Sleep Timer Behavior"
+            android:key="sleep_timer_screen"/>
+
+        <CheckBoxPreference
+            android:title="Use Experimental Player"
+            android:summary="Disabled"
+            android:defaultValue="false"
+            android:key="exoplayer_key"/>
+
+        <CheckBoxPreference
+            android:title="Test Picture-in-Picture"
+            android:summary="Enabled"
+            android:defaultValue="true"
+            android:key="clunky_pip_key"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

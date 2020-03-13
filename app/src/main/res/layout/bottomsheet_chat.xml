@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/chatBackgroundColor">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="9dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:textSize="13sp"
+        android:textColor="?attr/chatMessageTextColor"/>
+
+    <TextView
+        android:id="@+id/mention_user"
+        style="@style/stream_settings_item"
+        android:text="Mention User"
+        android:textColor="?attr/chatMessageTextColor"/>
+
+    <TextView
+        android:id="@+id/copy_message"
+        style="@style/stream_settings_item"
+        android:text="Copy Message"
+        android:textColor="?attr/chatMessageTextColor"/>
+</LinearLayout>

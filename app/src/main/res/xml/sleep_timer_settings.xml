@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Sleep Timer Settings"
+        android:key="category_sleep_timer">
+
+        <CheckBoxPreference
+            android:title="Go to Home Screen"
+            android:defaultValue="true"
+            android:key="home_screen_key"/>
+
+        <CheckBoxPreference
+            android:title="Turn Screen Off"
+            android:defaultValue="true"
+            android:key="lock_screen_key"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

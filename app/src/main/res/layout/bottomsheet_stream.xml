@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/quality_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?attr/chatBackgroundColor">
+
+            <LinearLayout
+                android:id="@+id/display_settings_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/stream_settings_item"
+                    android:textColor="@color/grey_500"
+                    android:text="DISPLAY SETTINGS"/>
+
+                <TextView
+                    android:id="@+id/sleep_timer"
+                    style="@style/stream_settings_item"
+                    android:text="Set up Sleep Timer"
+                    android:textColor="?attr/chatMessageTextColor"/>
+
+                <TextView
+                    android:id="@+id/external_play"
+                    style="@style/stream_settings_item"
+                    android:text="Play on External Player App"
+                    android:textColor="?attr/chatMessageTextColor"/>
+
+                <RelativeLayout
+                    android:id="@+id/crop_to_fit_wrapper"
+                    style="@style/stream_settings_item"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/crop_to_fit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:text="Set Crop to Fit"
+                        android:textColor="?attr/chatMessageTextColor"/>
+
+                    <CheckBox
+                        android:id="@+id/crop_to_fit_checkbox"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/viewing_settings_text"
+                style="@style/stream_settings_item"
+                android:textColor="@color/grey_500"
+                android:text="@string/viewing_settings_label"/>
+
+            <TextView
+                android:id="@+id/audio_only"
+                style="@style/stream_settings_item"
+                android:text="Audio Only"
+                android:textColor="?attr/chatMessageTextColor"/>
+
+            <TextView
+                android:id="@+id/chat_only"
+                style="@style/stream_settings_item"
+                android:text="Chat Only"
+                android:textColor="?attr/chatMessageTextColor"/>
+
+            <TextView
+                style="@style/stream_settings_item"
+                android:textColor="@color/grey_500"
+                android:text="@string/quality_settings_label"/>
+
+            <TextView
+                android:id="@+id/quality_one"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quality_two"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quality_three"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quality_four"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quality_five"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quality_six"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quality_seven"
+                style="@style/stream_settings_item"
+                android:textColor="?attr/chatMessageTextColor"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

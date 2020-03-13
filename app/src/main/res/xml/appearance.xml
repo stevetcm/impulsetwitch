@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="category_appearance"
+        android:title="Appearance Settings">
+
+        <Preference
+            android:title="Theme"
+            android:summary="Click to Change Layout Color"
+            android:key="theme_key"/>
+
+        <Preference
+            android:title="Opening Page"
+            android:summary="Featured Streams"
+            android:key="opening_key"/>
+    </PreferenceCategory>
+</PreferenceScreen>

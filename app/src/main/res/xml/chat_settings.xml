@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="category_chat"
+        android:title="Chat Settings">
+
+        <Preference
+            android:title="Chat Width in Landscape"
+            android:summary="35%"
+            android:key="chat_width_key"/>
+
+        <CheckBoxPreference
+            android:title="Swipe to Show/Hide Chat"
+            android:summary="Enabled"
+            android:defaultValue="true"
+            android:key="chat_swipe_key"/>
+
+        <CheckBoxPreference
+            android:title="Allow BetterTTV Emotes"
+            android:summary="Enabled"
+            android:defaultValue="true"
+            android:key="bttv_emotes_key"/>
+
+        <CheckBoxPreference
+            android:title="Allow FrankerFaceZ Emotes"
+            android:summary="Enabled"
+            android:defaultValue="true"
+            android:key="ffz_emotes_key"/>
+    </PreferenceCategory>
+</PreferenceScreen>

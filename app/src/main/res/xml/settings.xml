@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Basic Settings">
+
+        <Preference
+            android:title="Twitch Account"
+            android:summary="Login to Twitch"
+            android:key="account_key"/>
+
+        <Preference
+            android:title="Appearance"
+            android:summary="Customize Look and Feel"
+            android:key="appearance_screen"/>
+
+        <Preference
+            android:title="Chat Settings"
+            android:summary="Configure Chat Behavior"
+            android:key="chat_screen"/>
+
+        <Preference
+            android:title="Player Settings"
+            android:summary="Configure Player Behavior"
+            android:key="player_screen"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Others"
+        android:key="category_others">
+
+        <CheckBoxPreference
+            android:title="Device Administrator"
+            android:summary="Disabled"
+            android:defaultValue="false"
+            android:key="device_admin_key"/>
+
+        <Preference
+            android:title="About"
+            android:summary="@string/version_string"
+            android:key="about_key"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

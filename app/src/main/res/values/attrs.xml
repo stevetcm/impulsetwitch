@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="navBarItemColor" format="reference"/>
+    <attr name="navBarBackground" format="reference"/>
+    <attr name="chatBackgroundColor" format="reference"/>
+    <attr name="chatMessageTextColor" format="reference"/>
+    <attr name="searchBackgroundColor" format="reference"/>
+    <attr name="searchTextColor" format="reference"/>
+    <attr name="customSideColor" format="reference"/>
+    <attr name="spinnerBackgroundColor" format="reference"/>
+    <attr name="main_tab_background" format="reference"/>
+</resources>

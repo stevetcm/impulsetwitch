@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="19dp">
+
+    <RelativeLayout
+        android:id="@+id/stream_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stream_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="Stream Image"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/stream_image_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_image_text"
+        android:layout_below="@+id/stream_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/channel_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="Channel Image"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/channel_image_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/game_image_text"
+        android:layout_below="@+id/channel_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/game_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="Game Image"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/game_image_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>
