@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.orangemuffin.impulse"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 42
+        versionName "1.5.2"
+        generatedDensities = []
+    }
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //material design and basic ui compatibility
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+
+    //recyclerview list and cardview item display
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+
+    //image processing, storing and display
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //modern http connection
+    compile 'com.squareup.okhttp3:okhttp:3.12.2'
+
+    //custom slidingtablayout with interpolation
+    //https://github.com/ogaclejapan/SmartTabLayout
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+
+    //gridlayout with sticky header
+    //https://github.com/Codewaves/Sticky-Header-Grid
+    compile 'com.codewaves.stickyheadergrid:stickyheadergrid:0.9.6'
+
+    //custom material design component
+    //https://github.com/rey5137/material
+    compile 'com.github.rey5137:material:1.2.2'
+
+    //google's new media player
+    compile 'com.google.android.exoplayer:exoplayer:r2.5.2'
+
+    //convert java objects to JSON
+    compile 'com.google.code.gson:gson:2.8.5'
+
+    //apache commons io utilities
+    compile 'commons-io:commons-io:2.4'
+
+    //animate gif drawable
+    //https://github.com/koral--/android-gif-drawable
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
+}
